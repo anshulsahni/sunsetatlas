@@ -1,0 +1,171 @@
+/*
+ * Sunset Atlas design tokens.
+ *
+ * Transcribed from the "Sunset Atlas" Claude Design project (Design System.dc.html,
+ * section 07 "Token reference"). This file is the single source of truth for every
+ * design value in the app; `lib/theme.ts` mirrors the names for TypeScript consumers.
+ *
+ * The governing idea of the palette: red always means the empire. Every other colour
+ * belongs to a nation. Never use an Empire red to decorate something that isn't about
+ * British rule.
+ */
+
+:root {
+  /* -- Empire: the imperial layer and the brand ------------------------- */
+  --empire-50: #fcebec;
+  --empire-100: #f7c9ce;
+  --empire-300: #e8697a;
+  --empire-500: #c8102e;
+  --empire-600: #a80c26;
+  --empire-700: #85091e;
+  --empire-900: #4a0812;
+
+  /* -- Parchment: paper and ink ----------------------------------------- */
+  --paper: #ffffff;
+  --surface: #ffffff;
+  --paper-2: #eef1f4;
+  --line: #e2e5ea;
+  --line-soft: #e6e9ee;
+  --line-softer: #eceff3;
+  --ink-3: #6b7280;
+  --ink-2: #4b5563;
+  --ink: #1b1d21;
+  --ink-disabled: #aeb4bd;
+
+  /* -- Support and semantic --------------------------------------------- */
+  --gold: #e4a11b;
+  --gold-surface: #fbf3da;
+  --gold-ink: #8a6410;
+  --ocean: #bfd6d2;
+  --ocean-ink: #4b6e69;
+  --success: #2e7d32;
+
+  --bg: var(--paper);
+  --text: var(--ink);
+  --text-muted: var(--ink-2);
+  --brand: var(--empire-500);
+  --brand-strong: var(--empire-700);
+  --accent: var(--gold);
+  --focus: var(--empire-500);
+
+  /* -- Typography -------------------------------------------------------- */
+  /* The --font-*-family variables are injected by next/font in app/layout.tsx. */
+  --font-display: var(--font-display-family), "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: var(--font-body-family), "Hanken Grotesk", system-ui, sans-serif;
+  --font-mono: var(--font-mono-family), "Space Mono", ui-monospace, monospace;
+
+  /* -- Radius ------------------------------------------------------------ */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* -- Space (4px base) -------------------------------------------------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-12: 48px;
+  --s-16: 64px;
+
+  /* -- Elevation --------------------------------------------------------- */
+  --sh-flat: 0 1px 2px rgba(20, 24, 31, 0.06);
+  --sh-card: 0 1px 2px rgba(20, 24, 31, 0.06), 0 8px 24px rgba(20, 24, 31, 0.09);
+  --sh-pop: 0 12px 40px rgba(74, 8, 18, 0.22);
+
+  /* -- Motion ------------------------------------------------------------ */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 180ms;
+  --dur-enter: 320ms;
+
+  /* -- Layout ------------------------------------------------------------ */
+  --content-width: 1080px;
+  --header-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  /* The cartographer's dotted grid that sits behind every page. */
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 24, 31, 0.045) 1px, transparent 0);
+  background-size: 22px 22px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--empire-600);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--empire-700);
+}
+
+::selection {
+  background: var(--empire-500);
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: var(--r-sm);
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+@keyframes atlas-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(200, 16, 46, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0);
+  }
+}
+
+@keyframes atlas-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
