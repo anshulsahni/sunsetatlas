@@ -18,6 +18,7 @@ and `index.ts` (the barrel you import from). See §1.2 of the root `AGENTS.md`.
 | `SectionHeading` | An `<h2>` with an optional Lucide icon and a right-hand action. |
 | `Breadcrumbs` | The trail up the tree. **Emits its own BreadcrumbList JSON-LD** — do not add breadcrumb structured data separately. |
 | `SiteHeader` / `SiteFooter` | Mounted once by the root layout. The footer links every month, region and decade. |
+| `ViewSwitcher` | Toggles between the atlas's two whole-dataset views — the map on `/` and the year grid on `/calendar`. Both options are real links; see `app/AGENT_GUIDE.md`. |
 
 ### Content
 

@@ -54,12 +54,28 @@ export interface NationalPalette {
   flagStops: string[];
 }
 
+/**
+ * Where to put a nation's pin on the world map.
+ *
+ * These are the coordinates of the **capital city**, not a landmass centroid. A
+ * centroid puts Kiribati in open water and Canada in the tundra; a capital is a
+ * place, and it is the place the independence was declared from. Decimal degrees,
+ * two places — the map never zooms past country level, so more precision would be
+ * false precision.
+ */
+export interface Coordinates {
+  lat: number;
+  lng: number;
+}
+
 /** Everything the site knows about one nation. */
 export interface Country {
   slug: string;
   /** Display name, e.g. "Myanmar (Burma)". */
   name: string;
   region: RegionSlug;
+  /** Capital city, for the world map on the home page. */
+  coordinates: Coordinates;
   independence: IndependenceDate;
   palette: NationalPalette;
 

@@ -20,10 +20,13 @@ British Empire. This is the only place country data lives.
 which stays the research record — every row carries a source URL, and the notes at
 the bottom of the CSV explain the judgement calls behind the harder columns.
 
-Two things in `data.ts` are **not** in the CSV and were authored alongside it:
+Three things in `data.ts` are **not** in the CSV and were authored alongside it:
 
 - `region` — an editorial grouping chosen for browsing, not a political statement.
 - `palette` — colours taken from each nation's flag, used to theme its page.
+- `coordinates` — the **capital city**, to two decimal places, for the world map. Not a
+  landmass centroid: a centroid puts Kiribati in open water and Canada in the tundra.
+  The map never zooms past country level, so more precision would be false precision.
 
 Two rows needed a hand-set date, because their CSV cell does not lead with one:
 
