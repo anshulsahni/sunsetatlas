@@ -1,0 +1,124 @@
+:root {
+  --ink: #0b1220;
+  --ink-deep: #060a12;
+  --parchment: #f4ecd8;
+  --gold: #d4af37;
+  --gold-soft: #c9a35e;
+  --muted: #9aa5b8;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at 50% -10%, #131f33 0%, var(--ink) 45%, var(--ink-deep) 100%);
+  color: var(--parchment);
+  font-family: var(--sans);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-lines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 0%, transparent 70%);
+  z-index: 0;
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 6vh 1.5rem 4vh;
+  text-align: center;
+}
+
+.heading {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: var(--gold);
+}
+
+.facts {
+  margin: 3.5rem auto;
+  padding: 2rem 1.75rem;
+  max-width: 620px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 10px;
+  background: rgba(212, 175, 55, 0.04);
+  min-height: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.facts-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+  font-weight: 600;
+}
+
+.typewriter {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 2.6vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--parchment);
+  min-height: 2.25em;
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--gold);
+  animation: blink 1s step-end infinite;
+  font-weight: 400;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .facts {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}
