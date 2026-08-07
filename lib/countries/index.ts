@@ -1,4 +1,11 @@
-export type { Country, IndependenceDate, NationalPalette, RegionSlug, TransferCharacter } from "./types";
+export type {
+  Coordinates,
+  Country,
+  IndependenceDate,
+  NationalPalette,
+  RegionSlug,
+  TransferCharacter,
+} from "./types";
 export type { DatedCountry, IndependenceDay, AtlasTotals } from "./queries";
 export type { Region } from "./regions";
 export type { Collection } from "./collections";

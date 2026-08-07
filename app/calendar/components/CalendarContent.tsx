@@ -5,6 +5,7 @@ import Container from "@/app/components/Container";
 import JsonLd from "@/app/components/JsonLd";
 import PageHero from "@/app/components/PageHero";
 import SectionHeading from "@/app/components/SectionHeading";
+import ViewSwitcher from "@/app/components/ViewSwitcher";
 import { getAtlasTotals } from "@/lib/countries";
 import { MONTH_NUMBERS, monthName } from "@/lib/dates";
 import { routes } from "@/lib/routes";
@@ -29,6 +30,9 @@ export default function CalendarContent() {
 
       <Section>
         <Container>
+          <SwitcherRow>
+            <ViewSwitcher active="calendar" />
+          </SwitcherRow>
           <YearCalendar totals={totals} />
         </Container>
       </Section>
@@ -61,4 +65,8 @@ const Section = styled.section`
   &:first-of-type {
     padding-top: var(--s-8);
   }
+`;
+
+const SwitcherRow = styled.div`
+  margin-bottom: var(--s-5);
 `;

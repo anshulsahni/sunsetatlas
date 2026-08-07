@@ -9,7 +9,7 @@ The site is deliberately shaped for search. There is one central hub, five mini 
 and two kinds of spoke. Nothing is more than two clicks from anything else.
 
 ```
-/                                   central hub
+/                                   central hub — and the world map view
 ├── /calendar                       mini hub — the year at a glance
 │   └── /calendar/[month]           12 spokes — "Independence days in August"
 ├── /on-this-day/[date]             ~62 spokes — "15 August", every nation on it
@@ -23,6 +23,21 @@ and two kinds of spoke. Nothing is more than two clicks from anything else.
 │   └── /collections/[slug]         6 spokes — "Still Commonwealth realms"
 └── /about
 ```
+
+### The two views
+
+The atlas can be looked at whole in two ways, and they are two **pages**, not two tabs:
+the world map lives on `/` and the year grid on `/calendar`. `ViewSwitcher` links them.
+
+They are separate documents on purpose. A client-side toggle would give one of the two
+views no URL, no title and no canonical, which for a site that lives on search means it
+does not exist. It also means `/` earns its own reason to be visited rather than being
+a lobby.
+
+The map is client-side canvas: a crawler sees nothing on it, and neither does a reader
+without JavaScript. So `app/_home/MapNationIndex` renders the same 66 nations as
+server-rendered links directly beneath it. **No link out of the home page may depend on
+the map having drawn.**
 
 `/on-this-day/[date]` deliberately sits at the top level rather than under `/calendar`.
 A date page is about the date, not about browsing the calendar, and "what happened on
@@ -58,9 +73,6 @@ belongs in `app/components/` instead.
 
 ## What is intentionally missing
 
-- **The map.** The design project includes a Google Maps view; it is not built yet.
-  The calendar is the only view. Do not scaffold map routes or add a view switcher
-  until the map actually exists — a toggle with one option is worse than no toggle.
 - **Real history copy.** Narrative sections render lorem ipsum through
   `<PlaceholderProse>`. See `lib/placeholderContent.ts` for why.
 - **Tests.** Planned, not written. Keep logic in pure helpers so they can be added.

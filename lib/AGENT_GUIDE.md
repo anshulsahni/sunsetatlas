@@ -13,6 +13,7 @@ be, so it stays easy to reason about and, later, to test.
 | `seo.ts` | `buildMetadata`, breadcrumb helpers, and all JSON-LD builders. |
 | `site.ts` | Site name, description, and `absoluteUrl` / `SITE_URL`. |
 | `theme.ts` | TypeScript mirror of the CSS custom properties in `app/globals.css`. |
+| `maps.ts` | Google Maps config: the API key, the opening camera, and the style array that repaints the map in the atlas palette. |
 | `analytics.ts` | The Mixpanel service. |
 | `placeholderContent.ts` | Deterministic lorem ipsum for unwritten narrative sections. |
 

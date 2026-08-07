@@ -1,4 +1,4 @@
-import { Compass, PartyPopper } from "lucide-react";
+import { Compass, Globe2, PartyPopper } from "lucide-react";
 
 import Container from "@/app/components/Container";
 import CountryCard from "@/app/components/CountryCard";
@@ -7,6 +7,8 @@ import JsonLd from "@/app/components/JsonLd";
 import PageHero from "@/app/components/PageHero";
 import SectionHeading from "@/app/components/SectionHeading";
 import AtlasStats from "@/app/_home/AtlasStats";
+import MapNationIndex from "@/app/_home/MapNationIndex";
+import MapView from "@/app/_home/MapView";
 import MiniHubCards from "@/app/_home/MiniHubCards";
 import ComingUpAnniversaries from "@/app/_home/ComingUpAnniversaries";
 import Section from "@/app/components/Section";
@@ -23,7 +25,8 @@ import { buildMetadata, itemListJsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: `${site.name} — every nation that left the British Empire`,
-  description: site.description,
+  description:
+    "A world map of every nation that gained independence from the British Empire — 66 pins, one per capital, each opening onto that nation's page. Or switch to the calendar and browse the same nations by date.",
   path: routes.home(),
 });
 
@@ -38,8 +41,11 @@ function pickUpcomingFallback(limit: number) {
 }
 
 /**
- * The central hub. Every mini hub and a sample of country pages are linked from
- * here, so crawlers always have a route from `/` to the whole dataset.
+ * The central hub, and the map view of the atlas.
+ *
+ * The map is the first thing below the hero — it is what the site is for. Every mini
+ * hub and every country page is linked from here too, so crawlers always have a route
+ * from `/` to the whole dataset without the map needing to have drawn.
  */
 export default function HomePage() {
   const totals = getAtlasTotals();
@@ -64,6 +70,20 @@ export default function HomePage() {
       </PageHero>
 
       <Container>
+        <Section>
+          <MapView />
+        </Section>
+
+        <Section data-divided="true">
+          <SectionHeading
+            icon={<Globe2 size={22} aria-hidden="true" />}
+            description="The same nations the map plots, in a form that needs no map: eight regions, sixty-six pages."
+          >
+            Every nation on the map
+          </SectionHeading>
+          <MapNationIndex />
+        </Section>
+
         <Section data-divided="true">
           <SectionHeading
             icon={<PartyPopper size={22} aria-hidden="true" />}

@@ -18,14 +18,29 @@ export const empire = {
   900: "var(--empire-900)",
 } as const;
 
-/** Literal hex values, for the few places CSS variables cannot reach. */
+/**
+ * Literal hex values, for the few places CSS variables cannot reach.
+ *
+ * The Google Maps style array is one of them: it is JSON handed to a canvas
+ * renderer that has never heard of `var(--ocean)`. Keep every value here identical
+ * to its counterpart in `app/globals.css` — they are the same token written twice.
+ */
 export const rawColors = {
+  empire50: "#fcebec",
+  empire300: "#e8697a",
   empire500: "#c8102e",
   empire700: "#85091e",
   empire900: "#4a0812",
   paper: "#ffffff",
+  paper2: "#eef1f4",
+  line: "#e2e5ea",
+  lineSoft: "#e6e9ee",
   ink: "#1b1d21",
+  ink2: "#4b5563",
+  ink3: "#6b7280",
   gold: "#e4a11b",
+  ocean: "#bfd6d2",
+  oceanInk: "#4b6e69",
 } as const;
 
 export const radius = {

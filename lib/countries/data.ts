@@ -15,6 +15,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "afghanistan",
     name: "Afghanistan",
     region: "asia",
+    coordinates: { lat: 34.53, lng: 69.17 },
     independence: { day: 19, month: 8, year: 1919, raw: "19 August 1919" },
     palette: {
       primary: "#007a36",
@@ -37,6 +38,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "antigua-and-barbuda",
     name: "Antigua and Barbuda",
     region: "caribbean",
+    coordinates: { lat: 17.12, lng: -61.85 },
     independence: { day: 1, month: 11, year: 1981, raw: "1 November 1981" },
     palette: {
       primary: "#0072c6",
@@ -59,6 +61,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "australia",
     name: "Australia",
     region: "oceania",
+    coordinates: { lat: -35.28, lng: 149.13 },
     independence: { day: 1, month: 1, year: 1901, raw: "1 January 1901 (Statute of Westminster adopted 1942; Australia Act 1986)", note: "Statute of Westminster adopted 1942; Australia Act 1986" },
     palette: {
       primary: "#00247d",
@@ -81,6 +84,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "bahrain",
     name: "Bahrain",
     region: "middle-east",
+    coordinates: { lat: 26.23, lng: 50.58 },
     independence: { day: 15, month: 8, year: 1971, raw: "15 August 1971" },
     palette: {
       primary: "#ce1126",
@@ -103,6 +107,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "bangladesh",
     name: "Bangladesh",
     region: "asia",
+    coordinates: { lat: 23.81, lng: 90.41 },
     independence: { day: 16, month: 12, year: 1971, raw: "16 December 1971 (declared 26 March 1971)", note: "declared 26 March 1971" },
     palette: {
       primary: "#006a4e",
@@ -125,6 +130,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "barbados",
     name: "Barbados",
     region: "caribbean",
+    coordinates: { lat: 13.11, lng: -59.62 },
     independence: { day: 30, month: 11, year: 1966, raw: "30 November 1966" },
     palette: {
       primary: "#00267f",
@@ -147,6 +153,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "belize",
     name: "Belize",
     region: "caribbean",
+    coordinates: { lat: 17.25, lng: -88.77 },
     independence: { day: 21, month: 9, year: 1981, raw: "21 September 1981" },
     palette: {
       primary: "#003f87",
@@ -169,6 +176,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "botswana",
     name: "Botswana",
     region: "africa",
+    coordinates: { lat: -24.65, lng: 25.91 },
     independence: { day: 30, month: 9, year: 1966, raw: "30 September 1966" },
     palette: {
       primary: "#75aadb",
@@ -191,6 +199,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "brunei",
     name: "Brunei",
     region: "asia",
+    coordinates: { lat: 4.9, lng: 114.94 },
     independence: { day: 1, month: 1, year: 1984, raw: "1 January 1984" },
     palette: {
       primary: "#fcd116",
@@ -213,6 +222,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "canada",
     name: "Canada",
     region: "north-america",
+    coordinates: { lat: 45.42, lng: -75.7 },
     independence: { day: 1, month: 7, year: 1867, raw: "1 July 1867 (Statute of Westminster 1931; Canada Act 1982)", note: "Statute of Westminster 1931; Canada Act 1982" },
     palette: {
       primary: "#d80621",
@@ -235,6 +245,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "cyprus",
     name: "Cyprus",
     region: "europe",
+    coordinates: { lat: 35.19, lng: 33.38 },
     independence: { day: 16, month: 8, year: 1960, raw: "16 August 1960" },
     palette: {
       primary: "#d57800",
@@ -257,6 +268,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "dominica",
     name: "Dominica",
     region: "caribbean",
+    coordinates: { lat: 15.3, lng: -61.39 },
     independence: { day: 3, month: 11, year: 1978, raw: "3 November 1978" },
     palette: {
       primary: "#006b3f",
@@ -279,6 +291,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "egypt",
     name: "Egypt",
     region: "africa",
+    coordinates: { lat: 30.04, lng: 31.24 },
     independence: { day: 28, month: 2, year: 1922, raw: "28 February 1922 (full withdrawal from Suez 1956)", note: "full withdrawal from Suez 1956" },
     palette: {
       primary: "#ce1126",
@@ -301,6 +314,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "eswatini",
     name: "Eswatini",
     region: "africa",
+    coordinates: { lat: -26.31, lng: 31.14 },
     independence: { day: 6, month: 9, year: 1968, raw: "6 September 1968" },
     palette: {
       primary: "#3e5eb9",
@@ -323,6 +337,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "fiji",
     name: "Fiji",
     region: "oceania",
+    coordinates: { lat: -18.14, lng: 178.44 },
     independence: { day: 10, month: 10, year: 1970, raw: "10 October 1970" },
     palette: {
       primary: "#68bfe5",
@@ -345,6 +360,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "ghana",
     name: "Ghana",
     region: "africa",
+    coordinates: { lat: 5.6, lng: -0.19 },
     independence: { day: 6, month: 3, year: 1957, raw: "6 March 1957" },
     palette: {
       primary: "#006b3f",
@@ -367,6 +383,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "grenada",
     name: "Grenada",
     region: "caribbean",
+    coordinates: { lat: 12.06, lng: -61.75 },
     independence: { day: 7, month: 2, year: 1974, raw: "7 February 1974" },
     palette: {
       primary: "#007a5e",
@@ -389,6 +406,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "guyana",
     name: "Guyana",
     region: "south-america",
+    coordinates: { lat: 6.8, lng: -58.16 },
     independence: { day: 26, month: 5, year: 1966, raw: "26 May 1966" },
     palette: {
       primary: "#009e49",
@@ -411,6 +429,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "india",
     name: "India",
     region: "asia",
+    coordinates: { lat: 28.61, lng: 77.21 },
     independence: { day: 15, month: 8, year: 1947, raw: "15 August 1947" },
     palette: {
       primary: "#ff9933",
@@ -433,6 +452,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "iraq",
     name: "Iraq",
     region: "middle-east",
+    coordinates: { lat: 33.32, lng: 44.36 },
     independence: { day: 3, month: 10, year: 1932, raw: "3 October 1932" },
     palette: {
       primary: "#007a3d",
@@ -455,6 +475,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "ireland",
     name: "Ireland",
     region: "europe",
+    coordinates: { lat: 53.35, lng: -6.26 },
     independence: { day: 6, month: 12, year: 1922, raw: "6 December 1922 (republic 18 April 1949)", note: "republic 18 April 1949" },
     palette: {
       primary: "#169b62",
@@ -477,6 +498,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "israel",
     name: "Israel",
     region: "middle-east",
+    coordinates: { lat: 31.78, lng: 35.22 },
     independence: { day: 14, month: 5, year: 1948, raw: "14 May 1948 (mandate expired 15 May)", note: "mandate expired 15 May" },
     palette: {
       primary: "#0038b8",
@@ -499,6 +521,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "jamaica",
     name: "Jamaica",
     region: "caribbean",
+    coordinates: { lat: 17.97, lng: -76.79 },
     independence: { day: 6, month: 8, year: 1962, raw: "6 August 1962" },
     palette: {
       primary: "#009b3a",
@@ -521,6 +544,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "jordan",
     name: "Jordan",
     region: "middle-east",
+    coordinates: { lat: 31.95, lng: 35.93 },
     independence: { day: 25, month: 5, year: 1946, raw: "25 May 1946" },
     palette: {
       primary: "#007a3d",
@@ -543,6 +567,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "kenya",
     name: "Kenya",
     region: "africa",
+    coordinates: { lat: -1.29, lng: 36.82 },
     independence: { day: 12, month: 12, year: 1963, raw: "12 December 1963" },
     palette: {
       primary: "#006600",
@@ -565,6 +590,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "kiribati",
     name: "Kiribati",
     region: "oceania",
+    coordinates: { lat: 1.33, lng: 172.98 },
     independence: { day: 12, month: 7, year: 1979, raw: "12 July 1979" },
     palette: {
       primary: "#ce1126",
@@ -587,6 +613,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "lesotho",
     name: "Lesotho",
     region: "africa",
+    coordinates: { lat: -29.31, lng: 27.48 },
     independence: { day: 4, month: 10, year: 1966, raw: "4 October 1966" },
     palette: {
       primary: "#00209f",
@@ -609,6 +636,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "libya",
     name: "Libya",
     region: "africa",
+    coordinates: { lat: 32.89, lng: 13.19 },
     independence: { day: 24, month: 12, year: 1951, raw: "24 December 1951" },
     palette: {
       primary: "#239e46",
@@ -631,6 +659,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "malawi",
     name: "Malawi",
     region: "africa",
+    coordinates: { lat: -13.96, lng: 33.79 },
     independence: { day: 6, month: 7, year: 1964, raw: "6 July 1964" },
     palette: {
       primary: "#339e35",
@@ -653,6 +682,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "malaysia",
     name: "Malaysia",
     region: "asia",
+    coordinates: { lat: 3.14, lng: 101.69 },
     independence: { day: 31, month: 8, year: 1957, raw: "31 August 1957 (Malaysia formed 16 September 1963)", note: "Malaysia formed 16 September 1963" },
     palette: {
       primary: "#010066",
@@ -675,6 +705,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "maldives",
     name: "Maldives",
     region: "asia",
+    coordinates: { lat: 4.18, lng: 73.51 },
     independence: { day: 26, month: 7, year: 1965, raw: "26 July 1965" },
     palette: {
       primary: "#d21034",
@@ -697,6 +728,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "malta",
     name: "Malta",
     region: "europe",
+    coordinates: { lat: 35.9, lng: 14.51 },
     independence: { day: 21, month: 9, year: 1964, raw: "21 September 1964" },
     palette: {
       primary: "#cf142b",
@@ -719,6 +751,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "mauritius",
     name: "Mauritius",
     region: "africa",
+    coordinates: { lat: -20.16, lng: 57.5 },
     independence: { day: 12, month: 3, year: 1968, raw: "12 March 1968" },
     palette: {
       primary: "#1a206d",
@@ -741,6 +774,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "myanmar",
     name: "Myanmar (Burma)",
     region: "asia",
+    coordinates: { lat: 19.75, lng: 96.1 },
     independence: { day: 4, month: 1, year: 1948, raw: "4 January 1948" },
     palette: {
       primary: "#34b233",
@@ -763,6 +797,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "nauru",
     name: "Nauru",
     region: "oceania",
+    coordinates: { lat: -0.55, lng: 166.92 },
     independence: { day: 31, month: 1, year: 1968, raw: "31 January 1968" },
     palette: {
       primary: "#002b7f",
@@ -785,6 +820,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "new-zealand",
     name: "New Zealand",
     region: "oceania",
+    coordinates: { lat: -41.29, lng: 174.78 },
     independence: { day: 26, month: 9, year: 1907, raw: "26 September 1907 (Statute of Westminster adopted 1947)", note: "Statute of Westminster adopted 1947" },
     palette: {
       primary: "#00247d",
@@ -807,6 +843,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "nigeria",
     name: "Nigeria",
     region: "africa",
+    coordinates: { lat: 9.06, lng: 7.49 },
     independence: { day: 1, month: 10, year: 1960, raw: "1 October 1960" },
     palette: {
       primary: "#008751",
@@ -829,6 +866,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "oman",
     name: "Oman",
     region: "middle-east",
+    coordinates: { lat: 23.59, lng: 58.41 },
     independence: { year: 1951, raw: "1951 Treaty of Friendship (British representatives left 1971)", note: "British representatives left 1971" },
     palette: {
       primary: "#db161b",
@@ -851,6 +889,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "pakistan",
     name: "Pakistan",
     region: "asia",
+    coordinates: { lat: 33.68, lng: 73.05 },
     independence: { day: 14, month: 8, year: 1947, raw: "14 August 1947" },
     palette: {
       primary: "#01411c",
@@ -873,6 +912,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "papua-new-guinea",
     name: "Papua New Guinea",
     region: "oceania",
+    coordinates: { lat: -9.44, lng: 147.18 },
     independence: { day: 16, month: 9, year: 1975, raw: "16 September 1975" },
     palette: {
       primary: "#ce1126",
@@ -895,6 +935,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "qatar",
     name: "Qatar",
     region: "middle-east",
+    coordinates: { lat: 25.29, lng: 51.53 },
     independence: { day: 3, month: 9, year: 1971, raw: "3 September 1971" },
     palette: {
       primary: "#8a1538",
@@ -917,6 +958,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "saint-kitts-and-nevis",
     name: "Saint Kitts and Nevis",
     region: "caribbean",
+    coordinates: { lat: 17.3, lng: -62.72 },
     independence: { day: 19, month: 9, year: 1983, raw: "19 September 1983" },
     palette: {
       primary: "#009e49",
@@ -939,6 +981,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "saint-lucia",
     name: "Saint Lucia",
     region: "caribbean",
+    coordinates: { lat: 14.01, lng: -60.99 },
     independence: { day: 22, month: 2, year: 1979, raw: "22 February 1979" },
     palette: {
       primary: "#66ccff",
@@ -961,6 +1004,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "saint-vincent-and-the-grenadines",
     name: "Saint Vincent and the Grenadines",
     region: "caribbean",
+    coordinates: { lat: 13.16, lng: -61.22 },
     independence: { day: 27, month: 10, year: 1979, raw: "27 October 1979" },
     palette: {
       primary: "#0072c6",
@@ -983,6 +1027,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "samoa",
     name: "Samoa",
     region: "oceania",
+    coordinates: { lat: -13.83, lng: -171.77 },
     independence: { day: 1, month: 1, year: 1962, raw: "1 January 1962" },
     palette: {
       primary: "#002b7f",
@@ -1005,6 +1050,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "seychelles",
     name: "Seychelles",
     region: "africa",
+    coordinates: { lat: -4.62, lng: 55.45 },
     independence: { day: 29, month: 6, year: 1976, raw: "29 June 1976" },
     palette: {
       primary: "#003f87",
@@ -1027,6 +1073,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "sierra-leone",
     name: "Sierra Leone",
     region: "africa",
+    coordinates: { lat: 8.48, lng: -13.23 },
     independence: { day: 27, month: 4, year: 1961, raw: "27 April 1961" },
     palette: {
       primary: "#1eb53a",
@@ -1049,6 +1096,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "singapore",
     name: "Singapore",
     region: "asia",
+    coordinates: { lat: 1.35, lng: 103.82 },
     independence: { day: 9, month: 8, year: 1965, raw: "31 August 1963 from Britain; 9 August 1965 from Malaysia" },
     palette: {
       primary: "#ef3340",
@@ -1071,6 +1119,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "solomon-islands",
     name: "Solomon Islands",
     region: "oceania",
+    coordinates: { lat: -9.43, lng: 159.95 },
     independence: { day: 7, month: 7, year: 1978, raw: "7 July 1978" },
     palette: {
       primary: "#0051ba",
@@ -1093,6 +1142,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "somalia",
     name: "Somalia",
     region: "africa",
+    coordinates: { lat: 2.05, lng: 45.32 },
     independence: { day: 26, month: 6, year: 1960, raw: "26 June 1960 (union with Italian Somaliland 1 July 1960)", note: "union with Italian Somaliland 1 July 1960" },
     palette: {
       primary: "#4189dd",
@@ -1115,6 +1165,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "south-africa",
     name: "South Africa",
     region: "africa",
+    coordinates: { lat: -25.75, lng: 28.19 },
     independence: { day: 31, month: 5, year: 1910, raw: "31 May 1910 (republic 31 May 1961)", note: "republic 31 May 1961" },
     palette: {
       primary: "#007a4d",
@@ -1137,6 +1188,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "south-yemen",
     name: "South Yemen",
     region: "middle-east",
+    coordinates: { lat: 12.79, lng: 45.02 },
     independence: { day: 30, month: 11, year: 1967, raw: "30 November 1967" },
     palette: {
       primary: "#0080c0",
@@ -1159,6 +1211,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "sri-lanka",
     name: "Sri Lanka",
     region: "asia",
+    coordinates: { lat: 6.93, lng: 79.86 },
     independence: { day: 4, month: 2, year: 1948, raw: "4 February 1948" },
     palette: {
       primary: "#8d2029",
@@ -1181,6 +1234,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "sudan",
     name: "Sudan",
     region: "africa",
+    coordinates: { lat: 15.5, lng: 32.56 },
     independence: { day: 1, month: 1, year: 1956, raw: "1 January 1956" },
     palette: {
       primary: "#007229",
@@ -1203,6 +1257,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "tanzania",
     name: "Tanzania",
     region: "africa",
+    coordinates: { lat: -6.16, lng: 35.75 },
     independence: { day: 9, month: 12, year: 1961, raw: "9 December 1961 (Zanzibar 10 December 1963; union 26 April 1964)", note: "Zanzibar 10 December 1963; union 26 April 1964" },
     palette: {
       primary: "#1eb53a",
@@ -1225,6 +1280,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "bahamas",
     name: "The Bahamas",
     region: "caribbean",
+    coordinates: { lat: 25.06, lng: -77.34 },
     independence: { day: 10, month: 7, year: 1973, raw: "10 July 1973" },
     palette: {
       primary: "#00778b",
@@ -1247,6 +1303,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "gambia",
     name: "The Gambia",
     region: "africa",
+    coordinates: { lat: 13.45, lng: -16.58 },
     independence: { day: 18, month: 2, year: 1965, raw: "18 February 1965" },
     palette: {
       primary: "#3a7728",
@@ -1269,6 +1326,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "tonga",
     name: "Tonga",
     region: "oceania",
+    coordinates: { lat: -21.14, lng: -175.2 },
     independence: { day: 4, month: 6, year: 1970, raw: "4 June 1970" },
     palette: {
       primary: "#c10000",
@@ -1291,6 +1349,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "trinidad-and-tobago",
     name: "Trinidad and Tobago",
     region: "caribbean",
+    coordinates: { lat: 10.65, lng: -61.51 },
     independence: { day: 31, month: 8, year: 1962, raw: "31 August 1962" },
     palette: {
       primary: "#ce1126",
@@ -1313,6 +1372,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "tuvalu",
     name: "Tuvalu",
     region: "oceania",
+    coordinates: { lat: -8.52, lng: 179.2 },
     independence: { day: 1, month: 10, year: 1978, raw: "1 October 1978" },
     palette: {
       primary: "#418fde",
@@ -1335,6 +1395,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "uganda",
     name: "Uganda",
     region: "africa",
+    coordinates: { lat: 0.35, lng: 32.58 },
     independence: { day: 9, month: 10, year: 1962, raw: "9 October 1962" },
     palette: {
       primary: "#fcdc04",
@@ -1357,6 +1418,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "united-arab-emirates",
     name: "United Arab Emirates",
     region: "middle-east",
+    coordinates: { lat: 24.45, lng: 54.38 },
     independence: { day: 2, month: 12, year: 1971, raw: "2 December 1971 (Ras Al Khaimah joined 10 February 1972)", note: "Ras Al Khaimah joined 10 February 1972" },
     palette: {
       primary: "#00732f",
@@ -1379,6 +1441,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "united-states",
     name: "United States",
     region: "north-america",
+    coordinates: { lat: 38.91, lng: -77.04 },
     independence: { day: 4, month: 7, year: 1776, raw: "4 July 1776 (recognised 3 September 1783)", note: "recognised 3 September 1783" },
     palette: {
       primary: "#3c3b6e",
@@ -1401,6 +1464,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "vanuatu",
     name: "Vanuatu",
     region: "oceania",
+    coordinates: { lat: -17.73, lng: 168.32 },
     independence: { day: 30, month: 7, year: 1980, raw: "30 July 1980" },
     palette: {
       primary: "#009543",
@@ -1423,6 +1487,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "zambia",
     name: "Zambia",
     region: "africa",
+    coordinates: { lat: -15.39, lng: 28.32 },
     independence: { day: 24, month: 10, year: 1964, raw: "24 October 1964" },
     palette: {
       primary: "#198a00",
@@ -1445,6 +1510,7 @@ export const COUNTRIES: readonly Country[] = [
     slug: "zimbabwe",
     name: "Zimbabwe",
     region: "africa",
+    coordinates: { lat: -17.83, lng: 31.05 },
     independence: { day: 18, month: 4, year: 1980, raw: "18 April 1980" },
     palette: {
       primary: "#319208",
